@@ -38,3 +38,17 @@ let questions = [
     correct: "C"
   }
 ];
+
+// create variables
+
+const lastQuestion = questions.length - 1;
+
+let runningQuestion = 0;
+
+let count = 0;
+
+const questionTime = 10; // 10 seconds
+const gaugeWidth = 150; // 150 pixels
+const gaugeUnit = gaugeWidth / questionTime;
+const TIMER;
+let score = 0;
