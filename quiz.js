@@ -10,3 +10,15 @@ const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
+
+// Create the questions
+let questions = [
+  {
+    question: "What does HTML stand for?",
+    imgSrc: "img/html.png",
+    choiceA: "Correct",
+    choiceB: "Wrong",
+    choiceC: "Wrong",
+    correct: "A"
+  }
+];
