@@ -20,5 +20,13 @@ let questions = [
     choiceB: "Wrong",
     choiceC: "Wrong",
     correct: "A"
+  },
+  {
+    question: "What does CSS stand for?",
+    imgSrc: "img/css.png",
+    choiceA: "Wrong",
+    choiceB: "Correct",
+    choiceC: "Wrong",
+    correct: "B"
   }
 ];
