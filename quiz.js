@@ -28,5 +28,13 @@ let questions = [
     choiceB: "Correct",
     choiceC: "Wrong",
     correct: "B"
+  },
+  {
+    question: "What does JS stand for?",
+    imgSrc: "img/js.png",
+    choiceA: "Wrong",
+    choiceB: "Wrong",
+    choiceC: "Correct",
+    correct: "C"
   }
 ];
