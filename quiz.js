@@ -101,3 +101,21 @@ function renderCounter() {
         }
     }
 }
+
+// Check Answers
+function checkAnswer(answer) {
+    if( answer == question[runningQuestion].correct){
+        score++;
+        answerIsCorrect();
+    } else {
+        answerIsWrong();
+    }
+    count = 0;
+    if(runningQuestion < lastQuestion) {
+        runningQuestion++;
+        renderQuestion();
+    } else {
+        clearInterval(TIMER);
+        scoreRender();
+    }
+}
