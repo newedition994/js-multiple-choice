@@ -52,3 +52,26 @@ const gaugeWidth = 150; // 150 pixels
 const gaugeUnit = gaugeWidth / questionTime;
 const TIMER;
 let score = 0;
+
+// render questions
+function renderQuestion() {
+    let q = questions[runningQuestion];
+
+    question.innerHTML = "<p>"+q.question+"</p>";
+    qImg.innerHTML = "<img src="+q.imgSrc+">";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+}
+
+start.addEventListener("click", startQuiz);
+
+// Quiz
+function startQuiz() {
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    renderProgress();
+    renderCounter();
+    TIMER = setInterval(renderCounter, 1000); // 1 second
+}
